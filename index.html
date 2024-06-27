@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wed Realms</title>
+    <link rel="shortcut icon" href="./IMAGENES/juego.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <audio id="myAudio" autoplay>
+        <source src="./SONIDOS/Challenge_complete.ogg.opus" type="audio/ogg">
+    </audio>
+    <header class="hero">
+        <h1>Bienvenidos a Mi Realm de Minecraft</h1>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Bienvenida</h2>
+            <p>Bienvenido a nuestro realm de Minecraft. Explora, construye y diviértete en este increíble mundo.</p>
+        </section>
+        <section class="seeds">
+            <h2>Seeds del Realm</h2>
+            <div class="seed">
+                <p>Seed 1: <span id="seed1">-864577533425702276</span> <button onclick="copySeed('seed1')">Copiar</button></p>
+            </div>
+            <div class="seed">
+                <p>Seed 2: <span id="seed2">4777688003677262565</span> <button onclick="copySeed('seed2')">Copiar</button></p>
+            </div>
+        </section>
+        <section class="links">
+            <h2>Enlaces Útiles</h2>
+            <div class="links-containers" id="links-containers-mc">
+                <a href="https://www.mediafire.com/file/v5bhrh1cv8kx9vv/minecraft-1-21-0-music.apk/file" target="_blank" class="link-none-style">Minecraft 1.21</a>
+                <img src="./IMAGENES/juego mc.png" alt="" class="links-containers-icons">
+            </div>
+            <div class="links-containers" id="links-containers-whatsapp">
+                <a href="https://chat.whatsapp.com/EslZcWjmeVlGCS1MYGg070" target="_blank" class="link-none-style">Whatsapp</a>
+                <img src="./IMAGENES/whatsapp.png" alt="" class="links-containers-icons">
+            </div>
+            <div class="links-containers" id="links-containers-realms">
+                <a href="https://realms.gg/de6vAshzJfc" class="link-none-style">Wed City (1.21)</a>
+                <img src="./IMAGENES/video.png" alt="" class="links-containers-icons">
+            </div>
+        </section>
+        <section class="resources">
+            <h2>Recursos</h2>
+            <div class="resource">
+                <img src="./IMAGENES/diamonds.jpg" alt="Imagen de Mod">
+                <p class="recurse-title">Actions y stuff</p>
+                <p class="recurce-text-explicacion">Actions y stuff le da una nueva vida a tu minecraft con animaciones mas detallas que llevara tu experiencia al siguiente nivel</p>
+                <button class="DownloadButton"><a href="https://www.mediafire.com/file/klxcopnt5pdyx7l/actions-stuff-1-0-2.mcpack/file" class="link-none-style">Descarga</a></button>
+            </div>
+            <div class="resource">
+                <img src="./IMAGENES/emeralds.jpg" alt="Imagen de Textura">
+                <p class="recurse-title">Faithfull</p>
+                <p class="recurce-text-explicacion">Texturas que embellecen tu mundo sin ser demaciado excesivo para que no pierdas la esencia </p>
+                <button class="DownloadButton"><a href="https://www.mediafire.com/file/256vxjfgce6c0pl/Faithful+32x+-+1.20.mcpack/file" class="link-none-style">Descarga</a></button>
+            </div>
+            <div class="resource">
+                <img src="./IMAGENES/iron.jpg" alt="Imagen de Textura">
+                <p class="recurse-title">Player Graves Addons</p>
+                <p class="recurce-text-explicacion">Mueres amenudo? Este addon podria ayudarte. Muere y usa la llave para abrir la tumba y recuperar tus cosas</p>
+                <button class="DownloadButton"><a href="https://www.mediafire.com/file/0t2onfa7jekmqen/player-graves-addon-v6.mcaddon/file" class="link-none-style">Descarga</a></button>
+            </div>
+            <div class="resource">
+                <img src="./IMAGENES/gold.jpg" alt="Imagen de Textura">
+                <p class="recurse-title">Player Babys</p>
+                <p class="recurce-text-explicacion">Encoje tu tamaño y aumenta la diversion, con Players Baby te veras (como su nombre lo indica) como un bebe !compatible con multijugador!</p>
+                <button class="DownloadButton"><a href="https://www.mediafire.com/file/i4mefxyd4wsyouh/baby+player.mcpack/file" class="link-none-style">Descarga</a></button>
+            </div>
+            <div class="resource">
+                <img src="./IMAGENES/copper.jpg" alt="Imagen de Textura">
+                <p class="recurse-title">Definitive Tree Capitator</p>
+                <p class="recurce-text-explicacion">Tala arboles rapidamente con "Definitive Tree Capitator" con solo talar una vez, todo el arbol se viene abajo </p>
+                <button class="DownloadButton"><a href="https://www.mediafire.com/file/t0qwktda0jkvthk/Definitive+Tree+Capitator+BH.mcpack/file" class="link-none-style">Descarga</a></button>
+            </div>
+            <div class="resource">
+                <img src="./IMAGENES/redstone.jpg" alt="Imagen de Textura">
+                <p class="recurse-title">Dynamic Light</p>
+                <p class="recurce-text-explicacion">Una luz dinamica que podria ser util en el 99% de las veces, explora, lucha y haz la siesta sin miedo de quedarte sin antorcas</p>
+                <button class="DownloadButton"><a href="https://www.mediafire.com/file/h9vd9i0kgzypkpr/System+Dynamic+Lights+RS.mcpack/file" class="link-none-style">Descarga</a></button>
+            </div>
+        </section>
+        <section class="Galery">
+            <H2>Galeria</H2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./IMAGENES/carrusel-01 .jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./IMAGENES/carrusel-02.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./IMAGENES/carrusel-03.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Realm de Minecraft. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function copySeed(seedId) {
+
+            const audio = new
+            Audio("./SONIDOS/Challenge_complete.ogg.opus");
+            audio.play();
+
+            var seedText = document.getElementById(seedId).textContent;
+            navigator.clipboard.writeText(seedText).then(() => {
+                const audio = new
+                Audio("./SONIDOS/Challenge_complete.ogg.opus");
+                audio.play();
+                alert('Seed copiada: ' + seedText);
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
