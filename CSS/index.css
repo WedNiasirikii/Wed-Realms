@@ -33,6 +33,7 @@ header.hero h1 {
 
 main {
     padding: 2rem 1rem;
+    justify-content: center;
 }
 
 section {
@@ -43,22 +44,44 @@ section {
     text-align: center;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-gap: 20px; /* Espacio entre elementos */
+}
+.grid-container-resource {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+    grid-gap: 20px; /* Espacio entre elementos */
+}
+
+/* Estilos para la sección "Bienvenida" */
+.welcome {
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
 h2 {
     font-size: 2rem;
-    color: #32CD32;
+    color: orange;
     margin-bottom: 1rem;
 }
 
 .recurse-title {
-    color: green;
+    color: orange;
     font-size: 20px;
 }
+
+
+
 .seeds .seed {
     margin-bottom: 1rem;
 }
-
+.seed1y2 {
+    margin: 20px;
+    font-size: 20px;
+}
 .seeds button {
-    background-color: #1E90FF;
+    background-color: orange;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
@@ -85,7 +108,7 @@ h2 {
 
 .links-containers {
     display: flex;
-    width: 30%;
+    width: 90%;
     align-items: center;
     justify-content: center;
     color: white;
@@ -115,7 +138,7 @@ h2 {
     width: 90%;
 }
 .DownloadButton {
-    background-color: #32CD32;
+    background-color: orange;
     color: white;
     border: none;
     padding: 10px;
@@ -151,6 +174,20 @@ footer {
 
     .links-containers {
         width: 90%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+    
+    .grid-container-resource {
+        grid-template-columns: 1fr; 
+    }
+
+    .seeds {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 .link-none-style {
