@@ -1,196 +1,258 @@
+:root {
+  /*modo oscuro -on*/
+  --background-links: black;
+  --background-general-body: #121212; /*cambia el color del body (abajo de los mosaicos)*/
+  --background-mosaicos-section: #1e1e1e;
+  --color-texto-simple: #fff; /*textos simples*/
+  --color-texto-fuerte: orange; /*textos fuertes*/
+  --color-footer: #1e1e1e;
+}
+
 /* Reseteo básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #121212;
-    color: #fff;
+  font-family: "Press Start 2P", sans-serif;
+  line-height: 1.6;
+  /*background-color: var(--background-general-body);*/
+  background-image: url(../IMAGENES/fondo-piedra-negra-body.jpg\ .jpg);
+  color: var(--color-texto-simple);
 }
 
 header.hero {
-    height: 100vh;
-    background: url('../IMAGENES/Imagen\ de\ WhatsApp\ 2024-06-27\ a\ las\ 10.58.59_45b82fa7.jpg') no-repeat center center/cover;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 1rem;
-    background-attachment: fixed;
+  height: 100vh;
+  background: url("../IMAGENES/Imagen\ de\ WhatsApp\ 2024-06-27\ a\ las\ 10.58.59_45b82fa7.jpg")
+    no-repeat center center/cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  background-attachment: fixed;
 }
 
 header.hero h1 {
-    font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 10px;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 main {
-    padding: 2rem 1rem;
-    justify-content: center;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+/* styles.css */
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
 section {
-    margin-bottom: 2rem;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: #1E1E1E;
-    text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  /*background-color: var(--background-mosaicos-section);*/
+  background-image: url(../IMAGENES/Smooth_Basalt_29_JE1.webp);
+  text-align: center;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    grid-gap: 20px; /* Espacio entre elementos */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  grid-gap: 20px; /* Espacio entre elementos */
 }
 .grid-container-resource {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Dos columnas */
-    grid-gap: 20px; /* Espacio entre elementos */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+  grid-gap: 20px; /* Espacio entre elementos */
 }
 
 /* Estilos para la sección "Bienvenida" */
 .welcome {
-    width: 100%; /* Ocupa todo el ancho disponible */
+  width: 100%; /* Ocupa todo el ancho disponible */
 }
 
 h2 {
-    font-size: 2rem;
-    color: orange;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--color-texto-fuerte);
+  margin-bottom: 1rem;
 }
 
 .recurse-title {
-    color: orange;
-    font-size: 20px;
+  color: var(--color-texto-fuerte);
+  font-size: 20px;
 }
-
-
 
 .seeds .seed {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .seed1y2 {
-    margin: 20px;
-    font-size: 20px;
+  margin: 20px;
+  font-size: 20px;
 }
 .seeds button {
-    background-color: orange;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: var(--color-texto-fuerte);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .links a {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: white;
-    text-decoration: none;
-    margin: 10px;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-texto-simple);
+  text-decoration: none;
+  margin: 10px;
 }
 
 .links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .links-containers {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    margin: 30px;
-    text-align: center;
-    background-color: black;
-    border-radius: 5px;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-texto-simple);
+  font-size: 20px;
+  padding: 10px;
+  margin: 30px;
+  text-align: center;
+  /*background-color: var(--background-links);*/
+  background-image: url(../IMAGENES/fondo-piedra-negra-body.jpg\ .jpg);
+  border-radius: 5px;
 }
 .links-containers-icons {
-    width: 10%;
+  width: 10%;
 }
 .resources {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .resource {
-    background-color: black;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    flex: 1 1 300px;
-    width: 90%;
+  /*background-color: var(--background-links);*/
+  background-image: url(../IMAGENES/fondo-piedra-negra-body.jpg\ .jpg);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 300px;
+  width: 90%;
 }
 .DownloadButton {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: var(--color-texto-fuerte);
+  color: var(--color-texto-simple);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 .resource img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #1E1E1E;
-    color: #fff;
+  text-align: center;
+  padding: 1rem;
+  /*background-color: var(--color-footer)*/
+  background-image: url(../IMAGENES/Smooth_Basalt_29_JE1.webp);
+  color: var(--color-texto-simple);
 }
-
+.border-color {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
 @media (max-width: 600px) {
-    header.hero h1 {
-        font-size: 2rem;
-    }
+  header.hero h1 {
+    font-size: 1.5rem;
+  }
 
-    h2 {
-        font-size: 1.5rem;
-    }
+  h2 {
+    font-size: 1rem;
+  }
 
-    .resources {
-        flex-direction: column;
-        align-items: center;
-    }
+  .resources {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-    .links-containers {
-        width: 90%;
-    }
+  .links-containers {
+    width: 90%;
+  }
 
-    .grid-container {
-        grid-template-columns: 1fr; 
-    }
-    
-    .grid-container-resource {
-        grid-template-columns: 1fr; 
-    }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 
-    .seeds {
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+  .grid-container-resource {
+    grid-template-columns: 1fr;
+  }
+
+  .seeds {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .link-none-style {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: var(--color-texto-simple);
 }
