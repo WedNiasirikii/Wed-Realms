@@ -19,8 +19,9 @@ body {
   font-family: "Press Start 2P", sans-serif;
   line-height: 1.6;
   /*background-color: var(--background-general-body);*/
-  background-image: url(../IMAGENES/fondo-piedra-negra-body.jpg\ .jpg);
+  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
   color: var(--color-texto-simple);
+  cursor: url(../IMAGENES/diamond_sword.png), auto;
 }
 
 header.hero {
@@ -48,57 +49,18 @@ main {
   justify-content: center;
 }
 
-/* styles.css */
-.switch {
-  position: relative;
-  width: 60px;
-  height: 34px;
+.icons-temas {
+  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 1s;
 }
-
-input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #2196f3;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
 section {
   margin-bottom: 2rem;
   padding: 2rem;
   border-radius: 10px;
   /*background-color: var(--background-mosaicos-section);*/
-  background-image: url(../IMAGENES/Smooth_Basalt_29_JE1.webp);
+  background-image: url(../IMAGENES/temas/roca-negra/Smooth_Basalt_29_JE1.webp);
   text-align: center;
 }
 
@@ -124,6 +86,9 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.carousel-item {
+  height: 100%;
+}
 .recurse-title {
   color: var(--color-texto-fuerte);
   font-size: 20px;
@@ -134,10 +99,10 @@ h2 {
 }
 .seed1y2 {
   margin: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .seeds button {
-  background-color: var(--color-texto-fuerte);
+  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -153,7 +118,7 @@ h2 {
 .links a {
   display: block;
   margin-bottom: 0.5rem;
-  color: var(--color-texto-simple);
+  color: white;
   text-decoration: none;
   margin: 10px;
 }
@@ -166,14 +131,14 @@ h2 {
   display: flex;
   width: 90%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: var(--color-texto-simple);
   font-size: 20px;
   padding: 10px;
   margin: 30px;
   text-align: center;
   /*background-color: var(--background-links);*/
-  background-image: url(../IMAGENES/fondo-piedra-negra-body.jpg\ .jpg);
+  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
   border-radius: 5px;
 }
 .links-containers-icons {
@@ -182,21 +147,22 @@ h2 {
 .resources {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .resource {
   /*background-color: var(--background-links);*/
-  background-image: url(../IMAGENES/fondo-piedra-negra-body.jpg\ .jpg);
+  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
   text-align: center;
   flex: 1 1 300px;
   width: 90%;
+  justify-content: flex-end;
 }
 .DownloadButton {
-  background-color: var(--color-texto-fuerte);
+  background-image: url(../IMAGENES/temas/roca-negra/Smooth_Basalt_29_JE1.webp);
   color: var(--color-texto-simple);
   border: none;
   padding: 10px;
@@ -213,44 +179,11 @@ footer {
   text-align: center;
   padding: 1rem;
   /*background-color: var(--color-footer)*/
-  background-image: url(../IMAGENES/Smooth_Basalt_29_JE1.webp);
+  background-image: url(../IMAGENES/temas/roca-negra/Smooth_Basalt_29_JE1.webp);
   color: var(--color-texto-simple);
 }
 .border-color {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
-@media (max-width: 600px) {
-  header.hero h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  .resources {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .links-containers {
-    width: 90%;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-container-resource {
-    grid-template-columns: 1fr;
-  }
-
-  .seeds {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
 }
 .link-none-style {
   text-decoration: none;

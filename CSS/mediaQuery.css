@@ -1,0 +1,47 @@
+@media (max-width: 700px) {
+  header.hero h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .resources {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .recurse-title {
+    font-size: 1rem;
+  }
+
+  .recurce-text-explicacion {
+    font-size: 0.8rem;
+  }
+  .links-containers {
+    width: 90%;
+  }
+
+  .links-containers {
+    font-size: 0.8rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container-resource {
+    grid-template-columns: 1fr;
+  }
+
+  .seeds {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
+}
