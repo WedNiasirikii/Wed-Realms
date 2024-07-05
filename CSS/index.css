@@ -1,11 +1,7 @@
 :root {
   /*modo oscuro -on*/
-  --background-links: black;
-  --background-general-body: #121212; /*cambia el color del body (abajo de los mosaicos)*/
-  --background-mosaicos-section: #1e1e1e;
   --color-texto-simple: #fff; /*textos simples*/
   --color-texto-fuerte: orange; /*textos fuertes*/
-  --color-footer: #1e1e1e;
 }
 
 /* Reseteo básico */
@@ -18,7 +14,6 @@
 body {
   font-family: "Press Start 2P", sans-serif;
   line-height: 1.6;
-  /*background-color: var(--background-general-body);*/
   background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
   color: var(--color-texto-simple);
   cursor: url(../IMAGENES/diamond_sword.png), auto;
@@ -28,7 +23,7 @@ header.hero {
   height: 100vh;
   background: url("../IMAGENES/Imagen\ de\ WhatsApp\ 2024-06-27\ a\ las\ 10.58.59_45b82fa7.jpg")
     no-repeat center center/cover;
-  color: #fff;
+  color: var(--color-texto-simple);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +33,7 @@ header.hero {
 }
 
 header.hero h1 {
-  font-size: 3rem;
+  font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10px;
@@ -48,7 +43,10 @@ main {
   padding: 2rem 1rem;
   justify-content: center;
 }
-
+.temas {
+  display: flex;
+  flex-direction: column;
+}
 .icons-temas {
   background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
   padding: 10px 30px;
@@ -102,7 +100,7 @@ h2 {
   font-size: 15px;
 }
 .seeds button {
-  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
+  background-color: var(--color-texto-fuerte);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -118,13 +116,14 @@ h2 {
 .links a {
   display: block;
   margin-bottom: 0.5rem;
-  color: white;
+  color: var(--color-texto-simple);
   text-decoration: none;
   margin: 10px;
 }
 
 .links a:hover {
   text-decoration: underline;
+  cursor: url(../IMAGENES/netherite_sword.png);
 }
 
 .links-containers {
@@ -144,32 +143,29 @@ h2 {
 .links-containers-icons {
   width: 10%;
 }
-.resources {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 .resource {
-  /*background-color: var(--background-links);*/
-  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
   text-align: center;
-  flex: 1 1 300px;
   width: 90%;
-  justify-content: flex-end;
+  align-items: center;
+  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
+  border: solid white 2px;
 }
+
 .DownloadButton {
-  background-image: url(../IMAGENES/temas/roca-negra/Smooth_Basalt_29_JE1.webp);
+  background-color: var(--color-texto-fuerte);
   color: var(--color-texto-simple);
   border: none;
   padding: 10px;
   border-radius: 5px;
+  bottom: auto;
 }
 .resource img {
-  max-width: 100%;
+  max-width: 20%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;

@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/mediaQuery.css" />
+    <link rel="stylesheet" href="./CSS/mediaQueryTemp.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -25,20 +26,25 @@
     <main>
       <section class="temas border-color">
         <h2>Temas</h2>
-        <button class="icons-temas" onclick="temaRocaNegra()">
-          <img src="./IMAGENES/temas/roca-negra/icons/blackstone.png" alt="" />
-        </button>
-        <button class="icons-temas" onclick="temaEnd()">
-          <img src="./IMAGENES/temas/end/icons/end_stone_bricks.png" alt="" />
-        </button>
-        <button class="icons-temas" onclick="temaBamboo()">
-          <img src="./IMAGENES/temas/bamboo/icons/bamboo_block.png" alt="" />
-        </button>
+        <div id="Conteiner-boton-temas">
+          <button class="icons-temas" onclick="temaRocaNegra()">
+            <img
+              src="./IMAGENES/temas/roca-negra/icons/blackstone.png"
+              alt=""
+            />
+          </button>
+          <button class="icons-temas" onclick="temaEnd()">
+            <img src="./IMAGENES/temas/end/icons/end_stone_bricks.png" alt="" />
+          </button>
+          <button class="icons-temas" onclick="temaBamboo()">
+            <img src="./IMAGENES/temas/bamboo/icons/bamboo_block.png" alt="" />
+          </button>
+        </div>
       </section>
       <section class="welcome border-color">
         <h2>Bienvenida</h2>
         <p>
-          Bienvenido a nuestro realm de Minecraft. Explora, construye y
+          ¡Bienvenido a nuestro reino de Minecraft! Explora, construye y
           diviértete en este increíble mundo.
         </p>
       </section>
@@ -185,7 +191,7 @@
         <h2>Recursos</h2>
         <div class="grid-container-resource">
           <div class="resource border-color">
-            <img src="./IMAGENES/diamonds.jpg" alt="Imagen de Mod" />
+            <img src="./IMAGENES/icons/diamond.png" alt="Imagen de Mod" />
             <p class="recurse-title">Actions y stuff</p>
             <p class="recurce-text-explicacion">
               Actions y stuff le da una nueva vida a tu minecraft con
@@ -201,7 +207,7 @@
             </button>
           </div>
           <div class="resource border-color">
-            <img src="./IMAGENES/emeralds.jpg" alt="Imagen de Textura" />
+            <img src="./IMAGENES/icons/emerald.png" alt="Imagen de Textura" />
             <p class="recurse-title">Faithfull</p>
             <p class="recurce-text-explicacion">
               Texturas que embellecen tu mundo sin ser demaciado excesivo para
@@ -216,7 +222,10 @@
             </button>
           </div>
           <div class="resource border-color">
-            <img src="./IMAGENES/iron.jpg" alt="Imagen de Textura" />
+            <img
+              src="./IMAGENES/icons/iron_ingot.png"
+              alt="Imagen de Textura"
+            />
             <p class="recurse-title">Player Graves Addons</p>
             <p class="recurce-text-explicacion">
               Mueres amenudo? Este addon podria ayudarte. Muere y usa la llave
@@ -231,7 +240,10 @@
             </button>
           </div>
           <div class="resource border-color">
-            <img src="./IMAGENES/gold.jpg" alt="Imagen de Textura" />
+            <img
+              src="./IMAGENES/icons/gold_ingot.png"
+              alt="Imagen de Textura"
+            />
             <p class="recurse-title">Player Babys</p>
             <p class="recurce-text-explicacion">
               Encoje tu tamaño y aumenta la diversion, con Players Baby te veras
@@ -247,7 +259,10 @@
             </button>
           </div>
           <div class="resource border-color">
-            <img src="./IMAGENES/copper.jpg" alt="Imagen de Textura" />
+            <img
+              src="./IMAGENES/icons/copper_ingot.png"
+              alt="Imagen de Textura"
+            />
             <p class="recurse-title">Definitive Tree Capitator</p>
             <p class="recurce-text-explicacion">
               Tala arboles rapidamente con "Definitive Tree Capitator" con solo
@@ -262,7 +277,11 @@
             </button>
           </div>
           <div class="resource border-color">
-            <img src="./IMAGENES/redstone.jpg" alt="Imagen de Textura" />
+            <img
+              class="recurse-icons"
+              src="./IMAGENES/icons/redstone.png"
+              alt="Imagen de Textura"
+            />
             <p class="recurse-title">Dynamic Light</p>
             <p class="recurce-text-explicacion">
               Una luz dinamica que podria ser util en el 99% de las veces,

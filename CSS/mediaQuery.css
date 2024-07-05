@@ -1,13 +1,19 @@
-@media (max-width: 700px) {
+@media (max-width: 650px) {
+  body {
+    width: 100%;
+  }
+  .icons-temas {
+    padding: 6px 21px;
+  }
   header.hero h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   h2 {
     font-size: 1rem;
   }
 
-  .resources {
+  .resource {
     flex-direction: column;
     align-items: center;
     width: 100%;
