@@ -1,9 +1,12 @@
-@media (max-width: 650px) {
+@media (max-width: 400px) {
   body {
     width: 100%;
   }
+  .welcome p {
+    font-size: 12px;
+  }
   .icons-temas {
-    padding: 6px 21px;
+    padding: 11px;
   }
   header.hero h1 {
     font-size: 1rem;
@@ -41,13 +44,24 @@
     grid-template-columns: 1fr;
   }
 
-  .seeds {
+  .links-containers {
     width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    font-size: 10px;
+  }
+  .seed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .seed button {
+    font-size: 10px;
+  }
+  .seed1y2 {
+    font-size: 13px;
   }
 
   footer {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
