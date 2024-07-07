@@ -1,7 +1,12 @@
 :root {
-  /*modo oscuro -on*/
   --color-texto-simple: #fff; /*textos simples*/
   --color-texto-fuerte: orange; /*textos fuertes*/
+  --color-texto-alert: #fff; /*textos de las alertas*/
+
+  --fondo-fuerte: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
+  --fondo-simple: url(../IMAGENES/temas/roca-negra/Smooth_Basalt_29_JE1.webp);
+
+  --fondo-alerta: url(../IMAGENES/temas/roca-negra/Gilded_Blackstone_29_JE2.webp); //*Fondo de las alertas*/
 }
 
 /* Reseteo básico */
@@ -16,7 +21,6 @@ body {
   line-height: 1.6;
   background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
   color: var(--color-texto-simple);
-  cursor: url(../IMAGENES/diamond_sword.png), auto;
 }
 
 header.hero {
@@ -101,7 +105,7 @@ h2 {
 }
 .seeds button {
   background-color: var(--color-texto-fuerte);
-  color: #fff;
+  color: var(--color-texto-simple);
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -123,7 +127,6 @@ h2 {
 
 .links a:hover {
   text-decoration: underline;
-  cursor: url(../IMAGENES/netherite_sword.png);
 }
 
 .links-containers {
@@ -138,7 +141,7 @@ h2 {
   text-align: center;
   /*background-color: var(--background-links);*/
   background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
-  border-radius: 5px;
+  border: solid 2px var(--color-texto-fuerte);
 }
 .links-containers-icons {
   width: 10%;
@@ -153,9 +156,9 @@ h2 {
   width: 90%;
   align-items: center;
   background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
-  border: solid white 2px;
+  transition: 0.5s;
+  border: solid 2px var(--color-texto-fuerte);
 }
-
 .DownloadButton {
   background-color: var(--color-texto-fuerte);
   color: var(--color-texto-simple);

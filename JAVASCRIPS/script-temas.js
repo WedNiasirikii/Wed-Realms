@@ -24,11 +24,6 @@ function temaBamboo() {
 
     mosaicosLink.style.color = "white";
   });
-
-  document.querySelectorAll(".links a").forEach((BambooLinkText) => {
-    BambooLinkText.style.color = "white";
-  });
-
   document.querySelectorAll(".resource").forEach((mosaicosRecurse) => {
     mosaicosRecurse.style.backgroundImage =
       "url(./IMAGENES/temas/bamboo/Bamboo_Mosaic_29_JE1_BE1.webp)";
@@ -42,6 +37,11 @@ function temaBamboo() {
   document.documentElement.style.setProperty("--color-texto-simple", "white");
 
   document.documentElement.style.setProperty("--color-texto-fuerte", "yellow");
+
+  document.documentElement.style.setProperty(
+    "--fondo-alerta",
+    "url(../IMAGENES/temas/bamboo/Lime_Stained_Glass_29_JE3_BE2.webp)"
+  );
 }
 
 //cambio a temaRocaNegra
@@ -68,11 +68,6 @@ function temaRocaNegra() {
     RocaNegraLink.style.backgroundImage =
       "url(./IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg)";
   });
-
-  document.querySelectorAll(".links a").forEach((RocaNegraLinkText) => {
-    RocaNegraLinkText.style.color = "white";
-  });
-
   document.querySelectorAll(".resource").forEach((RocaNegraRecurse) => {
     RocaNegraRecurse.style.backgroundImage =
       "url(./IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg)";
@@ -86,6 +81,11 @@ function temaRocaNegra() {
   document.documentElement.style.setProperty("--color-texto-simple", "white");
 
   document.documentElement.style.setProperty("--color-texto-fuerte", "orange");
+
+  document.documentElement.style.setProperty(
+    "--fondo-alerta",
+    "url(../IMAGENES/temas/roca-negra/Gilded_Blackstone_29_JE2.webp)"
+  );
 }
 
 //cambio a tema End
@@ -124,4 +124,9 @@ function temaEnd() {
   document.documentElement.style.setProperty("--color-texto-simple", "black");
 
   document.documentElement.style.setProperty("--color-texto-fuerte", "purple");
+
+  document.documentElement.style.setProperty(
+    "--fondo-alerta",
+    "url(../IMAGENES/temas/end/Crying_Obsidian_29_JE1_BE1.webp)"
+  );
 }
