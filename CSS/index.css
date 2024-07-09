@@ -19,7 +19,7 @@
 body {
   font-family: "Press Start 2P", sans-serif;
   line-height: 1.6;
-  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
+  background-image: var(--fondo-fuerte);
   color: var(--color-texto-simple);
 }
 
@@ -52,7 +52,7 @@ main {
   flex-direction: column;
 }
 .icons-temas {
-  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
+  background-image: var(--fondo-fuerte);
   padding: 10px;
   border-radius: 5px;
   transition: 1s;
@@ -62,7 +62,7 @@ section {
   padding: 2rem;
   border-radius: 10px;
   /*background-color: var(--background-mosaicos-section);*/
-  background-image: url(../IMAGENES/temas/roca-negra/Smooth_Basalt_29_JE1.webp);
+  background-image: var(--fondo-simple);
   text-align: center;
 }
 
@@ -111,6 +111,12 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
 }
+.Galery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .links {
   display: flex;
   flex-direction: column;
@@ -140,7 +146,7 @@ h2 {
   margin: 30px;
   text-align: center;
   /*background-color: var(--background-links);*/
-  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
+  background-image: var(--fondo-fuerte);
   border: solid 2px var(--color-texto-fuerte);
 }
 .links-containers-icons {
@@ -155,7 +161,7 @@ h2 {
   text-align: center;
   width: 90%;
   align-items: center;
-  background-image: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
+  background-image: var(--fondo-fuerte);
   transition: 0.5s;
   border: solid 2px var(--color-texto-fuerte);
 }
@@ -178,7 +184,7 @@ footer {
   text-align: center;
   padding: 1rem;
   /*background-color: var(--color-footer)*/
-  background-image: url(../IMAGENES/temas/roca-negra/Smooth_Basalt_29_JE1.webp);
+  background-image: var(--fondo-simple);
   color: var(--color-texto-simple);
 }
 .border-color {
