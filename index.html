@@ -20,12 +20,18 @@
   </head>
   <body id="contenedorBody">
     <header class="hero">
-      <h1>Bienvenidos a Mi Realm de Minecraft</h1>
+      <h1>WedRealm</h1>
     </header>
     <main>
       <section class="temas border-color">
         <h2>Temas</h2>
         <div id="Conteiner-boton-temas">
+          <button class="icons-temas" onclick="temaLadrillos()">
+            <img
+              src="./IMAGENES/temas/ladrillos/icon/infested_cracked_stone_bricks.png"
+              alt=""
+            />
+          </button>
           <button class="icons-temas" onclick="temaRocaNegra()">
             <img
               src="./IMAGENES/temas/roca-negra/icons/blackstone.png"
@@ -54,35 +60,56 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="./IMAGENES/galeria/carrusel-01 .jpg"
+                  src="./IMAGENES/galeria/Galeria-2.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./IMAGENES/galeria/carrusel-02.jpg"
+                  src="./IMAGENES/galeria/Galeria-1.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./IMAGENES/galeria/carrusel-03.png"
+                  src="./IMAGENES/galeria/Galeria-5.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./IMAGENES/galeria/carrusel-04.png"
+                  src="./IMAGENES/galeria/Galeria-3.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./IMAGENES/galeria/carrusel-05.png"
+                  src="./IMAGENES/galeria/Galeria-4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./IMAGENES/galeria/Galeria-6.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./IMAGENES/galeria/Galeria-7.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./IMAGENES/galeria/Galeria-8.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -116,19 +143,6 @@
         </section>
         <section class="links border-color">
           <h2>Enlaces Útiles</h2>
-          <div class="links-containers border-color" id="links-containers-mc">
-            <a
-              href="https://www.mediafire.com/file/v5bhrh1cv8kx9vv/minecraft-1-21-0-music.apk/file"
-              target="_blank"
-              class="link-none-style"
-              >Minecraft 1.21</a
-            >
-            <img
-              src="./IMAGENES/juego mc.png"
-              alt=""
-              class="links-containers-icons"
-            />
-          </div>
           <div
             class="links-containers border-color"
             id="links-containers-whatsapp"
@@ -150,7 +164,7 @@
             id="links-containers-realms"
           >
             <a href="https://realms.gg/de6vAshzJfc" class="link-none-style"
-              >Wed City (1.21)</a
+              >WedRealm</a
             >
             <img
               src="./IMAGENES/video.png"
@@ -160,138 +174,74 @@
           </div>
         </section>
       </div>
-      <section class="seeds border-color">
-        <h2>Seeds del Realm</h2>
-        <div class="seed">
-          <p>
-            <span class="seed1y2" id="seed1">-864577533425702276</span>
-            <button onclick="copySeed('seed1')">Copiar</button>
-          </p>
+      <section class="palabra-clave border-color">
+        <div class="container mt-5">
+          <h2>Palabras Claves</h2>
+          <input
+            type="text"
+            id="keywordInput"
+            class="form-control"
+            placeholder="busca..."
+          />
+          <button class="btn btn-primary mt-3" id="searchButton">Buscar</button>
         </div>
-        <div class="seed">
-          <p>
-            <span class="seed1y2" id="seed2">4777688003677262565</span>
-            <button onclick="copySeed('seed2')">Copiar</button>
-          </p>
-        </div>
-      </section>
-      <section class="resources border-color">
-        <h2>Recursos</h2>
-        <div class="grid-container-resource">
-          <div class="resource border-color">
-            <img src="./IMAGENES/icons/diamond.png" alt="Imagen de Mod" />
-            <p class="recurse-title">Actions y stuff</p>
-            <p class="recurce-text-explicacion">
-              Actions & Stuff le da una nueva vida a tu Minecraft, con
-              animaciones más detalladas que llevarán tu experiencia al
-              siguiente nivel.
-            </p>
-            <button class="DownloadButton">
-              <a
-                href="https://www.mediafire.com/file/klxcopnt5pdyx7l/actions-stuff-1-0-2.mcpack/file"
-                class="link-none-style"
-                >Descarga</a
-              >
-            </button>
-          </div>
-          <div class="resource border-color">
-            <img src="./IMAGENES/icons/emerald.png" alt="Imagen de Textura" />
-            <p class="recurse-title">Faithfull</p>
-            <p class="recurce-text-explicacion">
-              Texturas que embellecen tu mundo sin ser demasiado excesivas, para
-              que no pierdas la esencia.
-            </p>
-            <button class="DownloadButton">
-              <a
-                href="https://www.mediafire.com/file/256vxjfgce6c0pl/Faithful+32x+-+1.20.mcpack/file"
-                class="link-none-style"
-                >Descarga</a
-              >
-            </button>
-          </div>
-          <div class="resource border-color">
-            <img
-              src="./IMAGENES/icons/iron_ingot.png"
-              alt="Imagen de Textura"
-            />
-            <p class="recurse-title">Player Graves Addons</p>
-            <p class="recurce-text-explicacion">
-              ¿Mueres a menudo? Este addon podría ayudarte. Muere y usa la llave
-              para abrir la tumba y recuperar tus cosas.
-            </p>
-            <button class="DownloadButton">
-              <a
-                href="https://www.mediafire.com/file/0t2onfa7jekmqen/player-graves-addon-v6.mcaddon/file"
-                class="link-none-style"
-                >Descarga</a
-              >
-            </button>
-          </div>
-          <div class="resource border-color">
-            <img
-              src="./IMAGENES/icons/gold_ingot.png"
-              alt="Imagen de Textura"
-            />
-            <p class="recurse-title">Player Babys</p>
-            <p class="recurce-text-explicacion">
-              ¡Encoge tu tamaño y aumenta la diversión con Players Baby! Te
-              verás (como su nombre lo indica) como un bebé. ¡Compatible con
-              multijugador!
-            </p>
-            <button class="DownloadButton">
-              <a
-                href="https://www.mediafire.com/file/i4mefxyd4wsyouh/baby+player.mcpack/file"
-                class="link-none-style"
-                >Descarga</a
-              >
-            </button>
-          </div>
-          <div class="resource border-color">
-            <img
-              src="./IMAGENES/icons/copper_ingot.png"
-              alt="Imagen de Textura"
-            />
-            <p class="recurse-title">Definitive Tree Capitator</p>
-            <p class="recurce-text-explicacion">
-              Tala árboles rápidamente con Definitive Tree Capitator. Con solo
-              talar una vez, todo el árbol se viene abajo.
-            </p>
-            <button class="DownloadButton">
-              <a
-                href="https://www.mediafire.com/file/t0qwktda0jkvthk/Definitive+Tree+Capitator+BH.mcpack/file"
-                class="link-none-style"
-                >Descarga</a
-              >
-            </button>
-          </div>
-          <div class="resource border-color">
-            <img
-              class="recurse-icons"
-              src="./IMAGENES/icons/redstone.png"
-              alt="Imagen de Textura"
-            />
-            <p class="recurse-title">Dynamic Light</p>
-            <p class="recurce-text-explicacion">
-              Una luz dinámica que podría ser útil en el 99% de las veces.
-              Explora, lucha y haz la siesta sin miedo de quedarte sin
-              antorchas.
-            </p>
-            <button class="DownloadButton">
-              <a
-                href="https://www.mediafire.com/file/h9vd9i0kgzypkpr/System+Dynamic+Lights+RS.mcpack/file"
-                class="link-none-style"
-                >Descarga</a
-              >
-            </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="contentModal"
+          tabindex="-1"
+          aria-labelledby="contentModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contentModalLabel">
+                  Contenido encontrado
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body" id="modalBodyContent">
+                <!-- Aquí se insertarán imágenes o videos dinámicamente -->
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="border-color">
-      <p>
-        &copy; 2024 Mi Realm de Minecraft. Todos los derechos reservados a Wafle
-        chupala.
-      </p>
+      <div class="Colum-Footer">
+        <h4>Diseñador y Desarrollador</h4>
+        <p>WedNiasirikii</p>
+      </div>
+      <div class="Colum-Footer">
+        <h4>Colaborador Destacado</h4>
+        <p>Waflittoo</p>
+      </div>
+      <div class="Colum-Footer">
+        <h4>Ilustraciones extraidas de:</h4>
+        <p>Nova Wallpaper</p>
+        <p>Minecraft Fandom Wiki</p>
+      </div>
+      <div class="Colum-Footer">
+        <h4>Mencion especial</h4>
+        <p>StrawJester211</p>
+      </div>
     </footer>
     <script src="./JAVASCRIPS/script-copySeed.js"></script>
     <script src="./JAVASCRIPS/script-temas.js"></script>
@@ -301,5 +251,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JAVASCRIPS/script-Claves.js"></script>
   </body>
 </html>

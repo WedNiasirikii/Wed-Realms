@@ -15,8 +15,7 @@ function copySeed(seedId) {
     Toast.fire({
       icon: "success",
       title: "Seed copiada.",
-      background: "var(--fondo-alerta)",
-      color: "white",
+      color: "black",
     });
   });
 }

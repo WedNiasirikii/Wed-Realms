@@ -3,10 +3,8 @@
   --color-texto-fuerte: orange; /*textos fuertes*/
   --color-texto-alert: #fff; /*textos de las alertas*/
 
-  --fondo-fuerte: url(../IMAGENES/temas/roca-negra/fondo-piedra-negra-body.jpg.jpg);
-  --fondo-simple: url(../IMAGENES/temas/roca-negra/Smooth_Basalt_29_JE1.webp);
-
-  --fondo-alerta: url(../IMAGENES/temas/roca-negra/Gilded_Blackstone_29_JE2.webp); //*Fondo de las alertas*/
+  --fondo-fuerte: url(../IMAGENES/temas/ladrillos/Stone_Bricks_29_JE3_BE2.webp);
+  --fondo-simple: url(../IMAGENES/temas/ladrillos/Spruce_Planks_29_JE4_BE2.webp);
 }
 
 /* Reseteo básico */
@@ -25,8 +23,8 @@ body {
 
 header.hero {
   height: 100vh;
-  background: url("../IMAGENES/Imagen\ de\ WhatsApp\ 2024-06-27\ a\ las\ 10.58.59_45b82fa7.jpg")
-    no-repeat center center/cover;
+  background: url("../IMAGENES/temas/ladrillos/Portada.jpg") no-repeat center
+    center/cover;
   color: var(--color-texto-simple);
   display: flex;
   justify-content: center;
@@ -96,21 +94,6 @@ h2 {
   font-size: 20px;
 }
 
-.seeds .seed {
-  margin-bottom: 1rem;
-}
-.seed1y2 {
-  margin: 20px;
-  font-size: 15px;
-}
-.seeds button {
-  background-color: var(--color-texto-fuerte);
-  color: var(--color-texto-simple);
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
 .Galery {
   display: flex;
   flex-direction: column;
@@ -153,39 +136,22 @@ h2 {
   width: 10%;
 }
 
-.resource {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  text-align: center;
-  width: 90%;
-  align-items: center;
-  background-image: var(--fondo-fuerte);
-  transition: 0.5s;
-  border: solid 2px var(--color-texto-fuerte);
-}
-.DownloadButton {
-  background-color: var(--color-texto-fuerte);
-  color: var(--color-texto-simple);
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  bottom: auto;
-}
-.resource img {
-  max-width: 20%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
 footer {
   text-align: center;
   padding: 1rem;
   /*background-color: var(--color-footer)*/
   background-image: var(--fondo-simple);
   color: var(--color-texto-simple);
+  display: flex;
+}
+
+footer h4 {
+  font-size: 15px;
+  color: var(--color-texto-fuerte);
+}
+
+footer p {
+  font-size: 13px;
 }
 .border-color {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
