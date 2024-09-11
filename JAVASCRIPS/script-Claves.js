@@ -97,6 +97,6 @@ document.getElementById("searchButton").addEventListener("click", function () {
   modalBody.innerHTML = content;
 
   if (backgroundImage) {
-    element.style.backgroundImage = `url(${backgroundImage})`;
+    element.style.backgroundImage = `url({backgroundImage})`;
   }
 });
