@@ -5,7 +5,6 @@ document.getElementById("searchButton").addEventListener("click", function () {
   const element = document.querySelector(".hero");
   let backgroundImage = "";
 
-  // Comprobar palabra clave y asignar contenido dinámico
   if (keyword == "jh") {
     content =
       '<iframe width="100%" height="315" src="https://www.youtube.com/embed/Ztg4AKCtB6k?si=EdzwYDGrdiYNj9UW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
@@ -49,7 +48,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
     modal.show();
   } else if (keyword == "vairon") {
     content =
-      '<iframe width="160%" height="315" src="https://www.youtube.com/embed/YabLVBUFLr8?si=U2Qmu-S3jD7-dDVD&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+      '<iframe width="100%" height="315" src="https://www.youtube.com/embed/YabLVBUFLr8?si=U2Qmu-S3jD7-dDVD&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
 
     const modal = new bootstrap.Modal(document.getElementById("contentModal"));
     modal.show();
@@ -87,11 +86,16 @@ document.getElementById("searchButton").addEventListener("click", function () {
       title: "Easter Egg Activado.",
       color: "black",
     });
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Ninguna Palabra clave coincide",
+    });
   }
 
   modalBody.innerHTML = content;
 
-  // Cambiar el fondo del header según la palabra clave
   if (backgroundImage) {
     element.style.backgroundImage = `url(${backgroundImage})`;
   }
